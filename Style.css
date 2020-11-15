@@ -1,0 +1,85 @@
+body{
+    width:100%;
+    margin:0px;
+    background-color:black;
+     -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.sun img{
+    height:90px;
+    width:90px;
+    border-radius: 100%;
+    position: relative;
+    left:50%;
+    top:250px;
+}
+.mercury img{
+    height:25px;
+    width:25px;
+    border-radius: 100%;
+    position: relative;
+    left:57.5%;
+    top:190px;
+    box-shadow:0px 0p 5px 5px white;
+}
+#mercury-orbit{
+    -webkit-animation: mercury 2s linear infinite ;
+   
+}
+.venus img{
+    height:30px;
+    width:30px;
+    border-radius: 100%;
+    position: relative;
+    left:57%;
+    top:155px;
+}
+#venus-orbit{
+    -webkit-animation: venus 4s linear infinite;
+}
+.earth img{
+    height:35px;
+    width:35px;
+    border-radius: 100%;
+    position: relative;
+    left:57%;
+    top:120px;
+}
+#earth-orbit{
+   -webkit-animation: earth 7s linear infinite;
+}
+.mars img{
+    height:35px;
+    width:50px;
+    border-radius: 100%;
+    position: relative;
+    left:54.5%;
+    top:80px;
+}
+#mars-orbit{
+   -webkit-animation:mars 9s linear infinite;
+}
+@-webkit-keyframes mercury{
+    from { -webkit-transform: rotate(0deg) translateX(80px) rotate(0deg); }
+    to   { -webkit-transform: rotate(360deg) translateX(80px) rotate(-360deg); }
+}
+@-webkit-keyframes venus{
+    from { -webkit-transform: rotate(0deg) translateX(140px) rotate(0deg); }
+    to   { -webkit-transform: rotate(360deg) translateX(140px) rotate(-360deg); }
+}
+@-webkit-keyframes earth{
+    from { -webkit-transform: rotate(0deg) translateX(180px) rotate(0deg); }
+    to   { -webkit-transform: rotate(360deg) translateX(180px) rotate(-360deg); }
+}
+@-webkit-keyframes mars{
+    from { -webkit-transform: rotate(0deg) translateX(220px) rotate(0deg); }
+    to   { -webkit-transform: rotate(360deg) translateX(220px) rotate(-360deg); }
+}
+@media (min-width:425px) and (max-width:540px)
+{
+     background-size:cover;
+    
+}
